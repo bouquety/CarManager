@@ -1,0 +1,47 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="car.pictures[0]" class="card-img-top align-self-center" [alt]="car.title">
+    <div class="card-body align-self-center">
+      <h5 class="card-title ">{{car.title}}</h5>
+    </div>
+  
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Ville: <span>{{car.address}}</span>
+      </li>
+      <li class="list-group-item">
+        Marque : <span>{{car.brand}}</span>
+      </li>
+      <li class="list-group-item">
+        Model : <span>{{car.model}}</span>
+      </li>
+      <li class="list-group-item">
+        Année : <span>{{car.model_year}}</span>
+      </li>
+      <li class="list-group-item">
+        Emission : <span>{{car.issuance}}</span>
+      </li>
+      <li class="list-group-item">
+        Nombre de Km : <span>{{car.mileage}} Km</span>
+      </li>
+      <li class="list-group-item">
+        Carburant: <span>{{car.fuel}}</span>
+      </li>
+      <li class="list-group-item">
+        Couleur : <span>{{car.color}}</span>
+      </li>
+      <li class="list-group-item">
+        Nombre de porte : <span>{{car.numbers_doors}}</span>
+      </li>
+      <li class="list-group-item">
+        Chevaux : <span>{{car.horse_power}} cv</span>
+      </li>
+      <li class="list-group-item">
+        Prix : <span>{{car.price}} € </span>
+      </li>
+      <li class="list-group-item">
+        Etat : <span *ngIf="car.sold;else vente">Vendu</span>
+      </li>
+    </ul>
+  </div>
+
+  <ng-template #vente> En vente </ng-template>

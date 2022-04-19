@@ -1,0 +1,89 @@
+<div class="container">
+
+<form [formGroup]="createCarForm" (ngSubmit)="onSubmit()">
+    
+    <div class="form-group">
+      <label >Nom de la voiture</label>
+      <input type="text" class="form-control" formControlName="title" placeholder="Nom de la voiture">
+    </div>
+
+    <div class="form-group">
+      <label >Ville</label>
+      <input type="text" class="form-control" formControlName="address" placeholder="Ville">
+    </div>
+
+    <div class="form-group">
+        <label >Marque</label>
+        <input type="text" class="form-control" formControlName="brand" placeholder="Marque">
+      </div>
+      
+      <div class="form-group">
+        <label >Modèle</label>
+        <input type="text" class="form-control" formControlName="model" placeholder="Modèle">
+      </div>
+
+      <div class="form-group">
+        <label >L'année</label>
+        <input type="text" class="form-control" formControlName="model_year" placeholder="L'année">
+      </div>
+      
+      <div class="form-group">
+        <label >Emission</label>
+        <input type="text" class="form-control" formControlName="issuance" placeholder="Emission">
+      </div>
+
+
+      
+      <div class="form-group">
+        <label >Nombre de Km</label>
+        <input type="text" class="form-control" formControlName="mileage" placeholder="Nombre de Km">
+      </div>
+      
+      <div class="form-group">
+        <label >Carburant</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>--- Choissez un carburant ---</option>
+          <option value="gasoil">Gasoil</option>
+          <option value="essence">Essence</option>
+          <option value="electric">Electrique</option>
+        </select>
+        
+      </div>
+
+      <div class="form-group">
+        <label >Couleur</label>
+        <input type="text" class="form-control" formControlName="color" placeholder="Couleur">
+      </div>
+      
+      <div class="form-group">
+        <label >Nombre de porte</label>
+        <input type="text" class="form-control" formControlName="numbers_doors" placeholder="Nombre de porte">
+      </div>
+
+      <div class="form-group">
+        <label >Nombre de chevaux</label>
+        <input type="text" class="form-control" formControlName="horse_power" placeholder="Nombre de chevaux">
+      </div>
+      
+      <div class="form-group">
+        <label >Prix</label>
+        <input type="text" class="form-control" formControlName="price" placeholder="Prix">
+      </div>
+
+      <div class="form-group">
+        <label >Url de l'image</label>
+        <input type="text" class="form-control" formControlName="pictures" placeholder="URL de l'image">
+      </div>
+
+      <div class="form-group">
+        <label >Etat</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>--- Choissez un état ---</option>
+          <option value="vendu">Vendu</option>
+          <option value="envente">En vente</option>
+        </select>
+      </div>
+    
+    <button type="submit" class="btn btn-primary">Ajouter la voiture</button>
+  </form>
+  </div>

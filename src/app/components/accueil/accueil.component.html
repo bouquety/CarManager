@@ -1,0 +1,17 @@
+<h1>Voici vos voitures par prix croissant :  </h1>
+<div class="container">
+  <div class="row">
+    Modifier le trie par : 
+  </div>
+  <div class="row">
+    <button type="button" class="btn btn-primary" (click)="sortOrder()" id="trie-prix">Prix</button>
+  </div>
+ 
+
+      <div class="row">
+
+        <div class="col-md-4 mt-3" *ngFor="let car of cars | sortByPrice: sortByPrice">
+<app-car  [car]="car"></app-car>
+        </div>
+      </div>
+</div>
